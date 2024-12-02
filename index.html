@@ -8,16 +8,25 @@
 </head>
 <body>
     <div class="background-animation"></div>
+    <div class="blocks-container"></div>
     
     <main class="container">
         <div class="logo">TokenSignals<span class="accent">.ai</span></div>
         <h1>Coming Soon</h1>
         <p>Advanced on-chain analysis powered by artificial intelligence</p>
-        
-        <div class="notify-container">
-            <input type="email" placeholder="Enter your email">
-            <button class="notify-button">Notify Me</button>
-        </div>
     </main>
+
+    <script>
+        // Create floating blocks
+        const blocksContainer = document.querySelector('.blocks-container');
+        for (let i = 0; i < 15; i++) {
+            const block = document.createElement('div');
+            block.className = 'block';
+            block.style.left = `${Math.random() * 100}vw`;
+            block.style.animationDelay = `${Math.random() * 5}s`;
+            block.style.animationDuration = `${10 + Math.random() * 20}s`;
+            blocksContainer.appendChild(block);
+        }
+    </script>
 </body>
 </html> 
