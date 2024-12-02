@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TokenSignals.ai - Coming Soon</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ5RS9QR6E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QZ5RS9QR6E');
+    </script>
 </head>
 <body>
     <div class="background-animation"></div>
@@ -16,17 +24,6 @@
         <p>Advanced on-chain analysis powered by artificial intelligence</p>
     </main>
 
-    <script>
-        // Create floating blocks
-        const blocksContainer = document.querySelector('.blocks-container');
-        for (let i = 0; i < 15; i++) {
-            const block = document.createElement('div');
-            block.className = 'block';
-            block.style.left = `${Math.random() * 100}vw`;
-            block.style.animationDelay = `${Math.random() * 5}s`;
-            block.style.animationDuration = `${10 + Math.random() * 20}s`;
-            blocksContainer.appendChild(block);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html> 
